@@ -1,3 +1,4 @@
+package Demo;
 class Animal{
 
     public void eat(){

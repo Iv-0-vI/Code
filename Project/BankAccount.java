@@ -1,10 +1,10 @@
+package Project;
 /*
  存钱
  取钱
  显示
  结束
  */
-import java.util.Scanner;
 class CheckingAccount {
     private double totalMoney;
 
