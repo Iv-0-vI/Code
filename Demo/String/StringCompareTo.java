@@ -1,4 +1,4 @@
-package Demo;
+package Demo.String;
 public class StringCompareTo {
     public static void main(String[] args) {
         String str1 = "123";
