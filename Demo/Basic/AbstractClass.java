@@ -1,4 +1,4 @@
-package Demo;
+package Demo.Basic;
 abstract class Animal{
     public abstract void makeSound(); 
     public void eat(){

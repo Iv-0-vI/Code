@@ -1,4 +1,4 @@
-package Demo;
+package Demo.String;
 
 public class StringLastSearch {
     public static void main(String[] args) {
