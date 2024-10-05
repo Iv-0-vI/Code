@@ -1,7 +1,7 @@
-// 线程
+// 创建线程的方式
 // 实现Runnable接口
 // 继承Thread类
-package Test;
+package MiniProgram;
 import java.lang.Runnable;
 
 public class TestThread {
@@ -10,12 +10,12 @@ public class TestThread {
         Thread t1 = new Thread(new MyRunnable());
         t1.start();
         try{
-            t1.join();
+            // t1.join();
+            //占据3s
             t1.sleep(3000);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
-
         //继承Thread类
         Thread t2 = new Thread(new MyThread());
         t2.start();
@@ -24,7 +24,7 @@ public class TestThread {
 
 }
 
-
+// 实现Runnable接口
 class MyRunnable implements Runnable {
     private String name1 = "LZK";
     private String name2 = "XXX";
@@ -36,6 +36,7 @@ class MyRunnable implements Runnable {
         System.out.println();
     }
 }
+// 继承Thread类
 class MyThread extends Thread{
     @Override
     public void run(){
