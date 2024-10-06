@@ -9,7 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestFile {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
         System.out.println("正在准备对象......");
         Person p1 = new Person("LZK", 22, "程序员");
         Person p2 = new Person("XXX", 21, "家庭主妇");
@@ -23,7 +24,7 @@ public class TestFile {
 
         System.out.println("正在写入文件......");
         PersonSystem ps = new PersonSystem();
-
+        ps.writeToFile("TestFile.txt");
         //打印
         System.out.println(p1);
         System.out.println(p2);
@@ -44,9 +45,9 @@ class PersonSystem {
     }
 
     public void writeToFile(String fileName) throws IOException {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(fileName))) {
-            bw.write("1");
-
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            writer.write("Hello Cosmos");
+            writer.flush();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -60,6 +61,7 @@ class PersonSystem {
 }
 
 class Person {
+
     private String name;
     private int age;
     private String job;
@@ -72,6 +74,6 @@ class Person {
 
     @Override
     public String toString() {
-        return name + "," + age + "," + job;
+        return (name + "," + age + "," + job);
     }
 }
