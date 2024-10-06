@@ -17,7 +17,7 @@ public class IteratorDemo {
         int list2Size = list2.size();
         System.out.println("list2Size = " + list2Size);
 
-        // 遍历迭代器
+        // 遍历迭代器1
         Iterator<Integer> it1 = list1.iterator();
         System.out.println("===");
         System.out.println("迭代器遍历");
@@ -30,6 +30,7 @@ public class IteratorDemo {
         System.out.println();
         System.out.println("===");
 
+        // 遍历迭代器2
         Iterator<Integer> it2 = list2.iterator();
         while (it2.hasNext()) {
             System.out.printf("%d ",it2.next()); 
