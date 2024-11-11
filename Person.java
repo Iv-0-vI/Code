@@ -1,17 +1,58 @@
 // package
 // 用代码讲个故事
 // 觉得哪里缺少补哪里
+// 天马行空|奇思妙想
 // import
 // My Java AI alive
+
+//Object > Person > Student|Children
+class Student extends Person {
+    private String name;
+    private int age;
+    private String code;
+
+    public Student(String name, int age, String code) {
+        super();
+        System.out.println("上一步是调用父类方法");
+        this.name = name;
+        this.age = age;
+        this.code = code;
+    }
+
+    public String toString() {
+        return "名字: " + this.name + " " + "年龄: " + this.age + " " + "学号" + this.code;
+
+    }
+
+}
+
+class Children extends Person {
+    // 不会写了 写代码好累 ps.跟电脑打字monologue
+    // 空参构造
+    public Children() {
+        System.out.println("空参构造一个Children对象");
+    }
+}
+
 public class Person {
     private String name;
     private int age;
     private int count;
 
-    public static void main(String[] args) {// 做实验
-        Person p1 = new Person();// 空参构造一个对象
-        Person p2 = new Person("刘紫柯", 22);// 有参构造一个对象
-        System.out.println(p1.toString());// 所有都是提示 包括二级菜单 (.)
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public Person() {// 构造方法 构造要有脑子()
@@ -25,15 +66,23 @@ public class Person {
     }
 
     public String toString() {
-        return "名字: " + this.name + "年龄: " + this.age + "出现" + this.count + "次";
+        return "名字: " + this.name + " " + "年龄: " + this.age + " " + "出现" + this.count + "次";
 
     }
-}
 
-class Student extends Person {
+    public static void main(String[] args) {// 做实验
+        System.out.println("============================================");
+        System.out.println("我在做实验");
+        Person p1 = new Person();// 空参构造一个对象
+        Person p2 = new Person("刘紫柯", 22);// 有参构造一个对象
+        System.out.println(p1.toString());// 所有都是提示 包括二级菜单 (.)
+        System.out.println("============================================");
+        // 创建一个Student对象
+        Person s1 = new Student("脉冲星之子", 22, "20020101");
+        System.out.println(s1.toString());
+        System.out.println(s1.getAge() + " " + s1.getName() + " " + s1.getClass());// 调用父类方法
+        s1.getClass();
+        System.out.println("============================================");
 
-}
-
-class Children extends Person {
-
+    }
 }
