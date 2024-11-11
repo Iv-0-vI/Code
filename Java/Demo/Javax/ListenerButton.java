@@ -13,15 +13,12 @@ import javax.swing.JFrame;
 //如何添加一个Button
 public class ListenerButton {
     public static void main(String[] args) {
+        // 我的随身听
         // 顺序很重要
-
-        JFrame frame = new JFrame("Window12");
+        JFrame frame = new JFrame("我的随身听");
         frame.setSize(300, 200);
-        frame.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 60));//匿名函数
+        frame.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 60));//匿名函数 传进来一个对象
         JButton button = new JButton("last");
-        JLabel label = new JLabel("我的随身听");
-        label.setFont(new Font("SansSerif",Font.BOLD,18));
-        frame.add(label);
         frame.getContentPane().add(button);
 
         JButton button1 = new JButton("triangle");
@@ -39,8 +36,6 @@ public class ListenerButton {
         button2.addActionListener(e -> {
             System.out.println("Tok was clicked");
         });
-        
         frame.setVisible(true);
-
     }
 }
