@@ -1,4 +1,4 @@
-public class GetClass {
+public class GetClassTest {
     public static void main(String[] args) {
         Person p = new Person();//san yao yi yao lin lin ie giu san
         System.out.println(p.hashCode());

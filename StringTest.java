@@ -1,5 +1,6 @@
+
 //Java 我能为你做些什么
-public class Main {
+public class StringTest {
     public static void main(String[] args) {
         printHello();// print: Hello Lzk
         System.out.println("============================================");

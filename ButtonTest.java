@@ -1,5 +1,3 @@
-package Project.douyin;
-
 import java.util.Scanner;
 
 public class ButtonTest {
@@ -12,13 +10,13 @@ public class ButtonTest {
                 System.out.println("过程");
             }
             if (string == "暂停") {
-                System.out.println("过程");
+                System.out.println("暂停");
             }
             if (string == "终止") {
-                System.out.println("过程");
+                System.out.println("终止");
             }
             if (string == "开始") {
-                System.out.println("过程");
+                System.out.println("开始");
             }
         }
 
