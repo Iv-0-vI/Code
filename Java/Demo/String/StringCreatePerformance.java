@@ -8,6 +8,7 @@ public class StringCreatePerformance {
         }
         long endTime1 = System.currentTimeMillis();
         System.out.println("消耗时间为"+(endTime1-startTime1)+"毫秒");
+        
         long startTime2 = System.currentTimeMillis();
         for(int i = 0;i<500000;i++){
             String s = new String("123");
