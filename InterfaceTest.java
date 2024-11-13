@@ -1,3 +1,5 @@
-public class InterfaceTest {
-    
+public interface InterfaceTest {
+    void setter();
+    int getter();
+    void printInfo();
 }
