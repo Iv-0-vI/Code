@@ -24,7 +24,7 @@ public class TestFile {
 
         System.out.println("正在写入文件......");
         PersonSystem ps = new PersonSystem();
-        ps.writeToFile("TestFile.txt");
+        ps.writeToFile("./Java/MiniProgram/TestFile.txt");
         //打印
         System.out.println(p1);
         System.out.println(p2);
@@ -47,7 +47,7 @@ class PersonSystem {
     public void writeToFile(String fileName) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             writer.write("Hello Cosmos");
-            writer.flush();
+            // writer.flush();
         } catch (Exception e) {
             e.printStackTrace();
         }
