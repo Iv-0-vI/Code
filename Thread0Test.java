@@ -1,9 +1,9 @@
 public class Thread0Test {
     public static void main(String[] args) {
         MyThread t1 = new MyThread();
-        t1.start();
+        t1.run();
         MyRunnable t2 = new MyRunnable();
-        // t2.start(); //运行不了
+        t2.run();; //运行不了
 
     }
 }
