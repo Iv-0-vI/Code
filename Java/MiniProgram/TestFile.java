@@ -10,7 +10,6 @@ import java.util.List;
 
 public class TestFile {
     public static void main(String[] args) throws IOException {
-
         System.out.println("正在准备对象......");
         Person p1 = new Person("LZK", 22, "程序员");
         Person p2 = new Person("XXX", 21, "家庭主妇");
@@ -47,7 +46,7 @@ class PersonSystem {
     public void writeToFile(String fileName) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             writer.write("Hello Cosmos");
-            // writer.flush();
+            writer.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
