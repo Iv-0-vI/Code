@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 是否完美运行
+        console.log('1')
+        sometext="hack成功"
+        window.addEventListener("resize", function () {
+            document.getElementById("demo").innerHTML = sometext;
+        });
+        // 全局
+        document.addEventListener("click",function(){
+            alert("添加document listener成功")
+        })
+        let clickEvent = document.getElementByClassName("button")
+        clickEvent.addEventListener('click',function(){
+            alert("button被点击了")
+            document.getElementById("demo").innerHTML = sometext;
+
+        })
+    </script>
+</head>
+
+<body>
+    <!-- 我只会改html和css和一点点JavaScript  -->
+    <span id="span">
+        我是一个span
+    </span>
+    <span id="demo">我是一个span</span>
+    <button class="button">button</button>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>0</li>
+    </ul>
+</body>
+
+
+</html>
