@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1 id="myButton">这是一个button</h1>
+    <input id="myInput" type="password">
+</body>
+<script>
+    //1
+    //$(document).ready(function () {
+
+    //});
+    //2
+    $(function () {
+        $('#myButton').click(function () {
+            alert('按钮点击操作！');
+        });
+        $('#myInput').val('aaabbb')
+        $('#myInput').click('keyup',function(){
+            console.log(123)
+        })
+    })
+</script>
+
+</html>
