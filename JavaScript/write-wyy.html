@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        const n = 10;
+
+        let x = 100;
+        document.write("<div class='wyy'>网易云音乐</div>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<input>")
+        //写标签
+        document.write("<h1>nihao</h1>")
+        //写反引号变量标签
+        document.write(`<h1>${n}</h1>`)
+        for (let i = 0; i < 10; i++) {
+            document.write(`<h1>${i}</h1>`)
+        }
+    </script>
+    <style>
+        .wyy{
+            position: absolute;
+        }
+        h1:not(:first-of-type){
+            color: aqua;
+        }
+        h1:nth-child(2){
+            color: red;
+        }
+        h1:nth-child(7){
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
