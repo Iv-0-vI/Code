@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <div>success loading</div>
+    <div id="app">{{ message }}
+        <div>{{info}}</div>
+        <input v-model="myinput" placeholder="what's your input">
+        <h5>{{ myinput }}</h5>
+        
+    </div>
+    <script type="module">
+        import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+        createApp({
+            data() {
+                return {
+                    message: 'Hello RUNOOB!',
+                    info: '变量声明的地方'
+                }
+            }
+        }).mount('#app')
+    </script>
+</body>
+<style>
+
+</style>
+
+</html>
