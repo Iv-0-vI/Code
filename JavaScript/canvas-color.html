@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="800px" height="300px">这是一个canvas</canvas>
+</body>
+<script>
+    var c1 = document.getElementById("canvas")//找到画布
+    var ctx=c1.getContext('2d')//获取画笔
+    ctx.fillStyle = '#FFF000';//改画笔颜色
+    ctx.fillRect(0,0,1080,100)
+</script>
+</html>

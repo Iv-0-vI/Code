@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c1" width="800px" height="300px">这是一个canvas</canvas>
+</body>
+<script>
+    var c1 = document.getElementById("c1")//找到画布获取dom
+    var ctx=c1.getContext('2d')//获取画笔
+    ctx.fillRect(0,0,1080,100)
+</script>
+</html>
