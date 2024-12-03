@@ -1,5 +1,5 @@
 import random
-list=[2333,1234,4321]
+list=[2333,1234,4321]#声明加函数处理
 random_num=random.choice(list)
 print(random_num)
 while True:
