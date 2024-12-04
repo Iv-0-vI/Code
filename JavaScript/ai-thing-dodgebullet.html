@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shooting Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        #gameCanvas {
+            background-color: #333;
+            display: block;
+            margin: auto;
+            position: relative;
+        }
+        #player {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+        }
+        #bullet {
+            position: absolute;
+            background-color: #f00;
+            width: 5px;
+            height: 20px;
+        }
+        #score{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="score">分数: 0</div>
+    <script>
+        //局限性 帧率不匹配 
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        const player = {
+            x: canvas.width / 2,
+            y: canvas.height - 60,
+            width: 50,
+            height: 50,
+            score:12,
+            draw: function() {
+                ctx.fillStyle = '#fff';
+                ctx.fillRect(this.x, this.y, this.width, this.height);
+            }
+        };
+
+        const bullet = {
+            x: 5,
+            y: 0,
+            width: 5,
+            height: 20,
+            speed: 5,
+            
+            draw: function() {
+                ctx.fillStyle = '#f00';
+                ctx.fillRect(this.x, this.y, this.width, this.height);
+            },
+            update: function() {
+                this.y += this.speed;
+                if (this.y > canvas.height) {
+                    this.reset();
+                }
+            },
+            reset: function() {
+                this.x = Math.random() * ((canvas.width - this.width)/2);
+                this.y = -this.height;
+            }
+        };
+
+        function gameLoop() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            player.draw();
+            bullet.draw();
+            bullet.update();
+            score: 0;
+
+            // collision I can explain it!!!!!
+            if (player.x < bullet.x + bullet.width &&
+                player.x + player.width > bullet.x &&
+                player.y < bullet.y + bullet.height &&
+                player.y + player.height > bullet.y) {
+                console.log(player.score)
+                score++
+                document.getElementById("score").innerHTML=this.score//failed
+                //document.location.reload();  //edit the game
+            }
+
+            requestAnimationFrame(gameLoop);
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                player.x -= 30;
+            } else if (e.key === 'ArrowRight') {
+                player.x += 30;
+            }
+        });
+
+        bullet.reset(); // Start with a bullet
+        gameLoop(); // Start the game loop
+    </script>
+</body>
+</html>
