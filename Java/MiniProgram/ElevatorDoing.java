@@ -47,7 +47,7 @@ class Elevator{
         for (int i = this.now_floor; i >= this.target_floor; i--) {
             System.out.println("下降中，当前楼层：" + i);
             try {
-                Thread.sleep(500); // 模拟电梯下降需要1秒
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
