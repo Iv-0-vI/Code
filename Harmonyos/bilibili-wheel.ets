@@ -2,6 +2,7 @@
 @Component
 //可读性很强 可写性很差 但很好改
 //属性和值
+//全集 删除
 struct index{
     build(){
         Column(){
