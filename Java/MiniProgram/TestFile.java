@@ -1,5 +1,5 @@
 package MiniProgram;
-//探索者1号
+//探索者1号 都是本类 public
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
