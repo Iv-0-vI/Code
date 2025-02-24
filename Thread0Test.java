@@ -7,7 +7,7 @@ public class Thread0Test {
 
     }
 }
-
+//感觉是格力
 class MyRunnable implements Runnable {
     // run方法是空的
     @Override
