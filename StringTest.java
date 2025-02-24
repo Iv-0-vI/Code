@@ -1,5 +1,6 @@
 
 //Java 我能为你做些什么
+//外星人打代码传输数据
 public class StringTest {
     public static void main(String[] args) {
         printHello();// print: Hello Lzk
