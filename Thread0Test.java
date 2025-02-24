@@ -23,4 +23,4 @@ class MyThread extends Thread {
         System.out.println("Thread线程开跑");
         System.out.println("通过继承Thread覆写Run方法来实现\'线程代码\'从主程序分离");
     }
-}
+}//两个run方法
