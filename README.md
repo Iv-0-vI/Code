@@ -1,6 +1,9 @@
 It's my ideology
+
 Hi，/__lv-vl__/
+
 Hello，My Cosmos.
+
 我是RapStar吗 是！
 
 我不是耶稣 也不是救世主 是！
