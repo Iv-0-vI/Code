@@ -2,6 +2,7 @@ package MiniProgram;
 import java.util.ArrayList;
 public class GunBought {
     public static void main(String[] args) {
+        //所有情况之一
         //1
         Gun a1 = new Gun();
         a1.newdeque.add(3);
