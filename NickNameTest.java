@@ -18,7 +18,7 @@ public class NickNameTest {
         ArrayList<String> 陈冠州_nickNames = new ArrayList<>();
         陈冠州_nickNames.add("Justin Bieber");
         陈冠州_nickNames.add("八宝州");
-        陈冠州_nickNames.add("道野");
+        陈冠州_nickNames.add("cgz");
         陈冠州_nickNames.add("Jack Harlow");
         Student stu2 = new Student("陈冠州", 陈冠州_nickNames);
         System.out.println(stu2.小名);
