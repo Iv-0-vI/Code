@@ -55,7 +55,7 @@ public class Person {
         this.age = age;
     }
 
-    public Person() {// 构造方法 构造要有脑子()
+    Person() {// 构造方法 构造要有脑子()
         System.out.println("空参构造创建了一个Person对象");
         this.count++;
         System.out.printf("这个对象创建了%d次\n", count);
