@@ -11,7 +11,7 @@ class Student extends Person {
     private int age;
     private String code;
 
-    public Student(String name, int age, String code) {
+    Student(String name, int age, String code) {
         super();
         System.out.println("上一步是调用父类方法");
         this.name = name;
