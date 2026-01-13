@@ -20,7 +20,7 @@ class Block<T> {
     T t;
     int count = 0;
 
-    public Block() {
+    Block() {
         count++;
         System.out.println();
         System.out.println("空构造Block对象" +getClass()+ count + "次");
