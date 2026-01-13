@@ -27,7 +27,7 @@ class Block<T> {
 
     }
 
-    public Block(T t) {
+    Block(T t) {
         System.out.println("有参构造我是一个block");
     }
 
