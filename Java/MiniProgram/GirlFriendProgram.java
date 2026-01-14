@@ -14,10 +14,10 @@ public class GirlFriendProgram{
         System.out.println(gf2.color);
     }
 }
-class GirlFriend{
+class GirlFriend{//不用多文件跳转
     public String name;
     public String color;
-    public GirlFriend(String name, String color){
+    public GirlFriend(String name, String color){//衣服 对象
         this.name = name;
         this.color = color;
     }
