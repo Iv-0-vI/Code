@@ -14,14 +14,6 @@ public class NickNameTest {
         刘泽楷_nickNames.add("__lv-vl__");
         Student stu1 = new Student("刘泽楷", 刘泽楷_nickNames);
         System.out.println(stu1.小名);
-        //学生: 陈冠州
-        ArrayList<String> 陈冠州_nickNames = new ArrayList<>();
-        陈冠州_nickNames.add("Justin Bieber");
-        陈冠州_nickNames.add("八宝州");
-        陈冠州_nickNames.add("cgz");
-        陈冠州_nickNames.add("Jack Harlow");
-        Student stu2 = new Student("陈冠州", 陈冠州_nickNames);
-        System.out.println(stu2.小名);
     }
 }
 
