@@ -17,7 +17,7 @@ public class TestThread {
             e.printStackTrace();
         }
         //继承Thread类
-        Thread t2 = new Thread(new MyThread());
+        Thread t2 = new Thread(new MyThread());//这啥呀
         t2.start();
 
     }
